@@ -13,18 +13,20 @@ exports.documentation = exports.home = void 0;
 const product_model_1 = require("../models/product.model");
 const category_model_1 = require("../models/category.model");
 const user_model_1 = require("../models/user.model");
+const express_config_1 = require("../config/express.config");
+const URL = express_config_1.expressConf.URL;
 function home(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         const products = yield (0, product_model_1.findAllRootModel)();
         const categories = yield (0, category_model_1.findAllRootModel)();
         const users = yield (0, user_model_1.findAllRoot)();
-        res.render("home", { products, categories, users });
+        res.render("home", { products, categories, users, URL });
     });
 }
 exports.home = home;
 function documentation(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
-        res.render("documentation");
+        res.render("documentation", { URL });
     });
 }
 exports.documentation = documentation;
