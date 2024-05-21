@@ -1,0 +1,1 @@
+{"version":3,"file":"express.config.js","sourceRoot":"","sources":["../../src/config/express.config.ts"],"names":[],"mappings":";;;;;;AAAA,oDAA4B;AAC5B,gBAAM,CAAC,MAAM,EAAE,CAAC;AAIhB,MAAM,YAAY,GAAG,OAAO,CAAC,GAAG,CAAC,YAAY,CAAC;AAC9C,IAAG,CAAC,YAAY;IACZ,MAAM,IAAI,KAAK,CAAE,kBAAkB,CAAC,CAAA;AAE3B,QAAA,WAAW,GAAe;IACnC,YAAY;CACf,CAAA"}
